@@ -1,5 +1,5 @@
 document.querySelector('header > h1').innerText = "Inspector Clouseau"
-document.querySelector('header > h2').innerText = "Zees eez Chief Inspector Clouseau you are speaking to"
+document.querySelector('header > .inspector').innerText = "Zees eez Chief Inspector Clouseau you are speaking to"
 document.querySelector('main > h1').innerText = "Inspector Clouseau"
 
 function reDisplay() {
