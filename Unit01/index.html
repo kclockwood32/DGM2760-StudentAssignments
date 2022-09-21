@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <title>01 Jim's Bed and Breakfast Casey</title>
+</head>
+<body>
+    <header>
+        <h1 id="company">
+        </h1>
+        <h2 id="slogan">
+        </h2>
+    </header>
+    <main>
+        <h1 id="pageName"></h1>
+        <h2>What I learned</h2>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Build a header with an image, and an H1 and H2 element, which loads through JavaScript.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Use an H1 for the page title.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Use an unordered list to specify the skills you demonstrated.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Dynamically insert the date into the page using JavaScript.
+          </label></br>
+          <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Use a prompt to ask for the users first name.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Insert the users name into the page along with a welcome message.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Push your webpage code to a GitHub repository.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Use Netlify to deploy your webpage from your repo.
+          </label></br>
+          <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Submit both your Netlify and GitHub URLs to Canvas for this assignment.
+          </label></br>
+        <label class="form-control">
+            <input type="checkbox" name="checkbox-checked" checked />
+            Configure an HTML footer with your name.
+          </label></br>
+        <h2>
+            Today is
+
+            <script>
+                let thedate = new Date()
+                document.write(thedate.toLocaleDateString())
+            </script>
+        </h2>
+        <p id="greeting"></p>
+    </main>
+    <footer>
+        <p>Assignment for DGM2760 by Casey Lockwood</p>
+    </footer>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
