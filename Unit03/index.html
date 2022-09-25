@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Voltaire&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gudea&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1></h1>
+        <h2 class="slogan"></h2>
+    </header>
+    <main>
+    <h2>What I learned...</h2>
+        <ul class="objectives">
+            <li>Display Window Properties</li>
+            <li>Display Document Properties</li>
+        </ul>
+    <h2>Instructions</h2>
+    <p>In this game you are gonna be a boss.</p>
+    
+
+<div class="gameTable">
+    <div class="a1">
+        <h3>Play</h3>
+        <div>
+            <input id="guess" type="number" placeholder="number"/>
+            <button onclick="evalGuess()">Guess</button>
+        </div>
+    </div>
+
+    <div class="a2">
+        <h3>Trys</h3>
+        <div id="attempts"></div>
+    </div>
+
+    <div class="a3">
+        <h3>Feedback</h3>
+        <div id="feedback"></div>
+    </div>
+
+    <div class="a4">
+        <h3>Award</h3>
+        <div id="trophy"></div>
+    </div>
+</div>
+    </main>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
