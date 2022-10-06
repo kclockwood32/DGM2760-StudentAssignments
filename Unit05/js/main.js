@@ -14,6 +14,7 @@ const listTrees = () => {
 
 // Add a redwood tree to end of list
 listTrees()
+
 document.querySelector('#add_redwood').onclick = () => {
     trees.push('redwood')
     listTrees()
@@ -25,11 +26,7 @@ document.querySelector('#add_pear').onclick = () => {
     listTrees()
 }
 
-document.querySelector('#sortTrees').onclick = () => {
-    trees.sort()
-    listTrees()
-}
-
+// Remove the first tree in the list
 document.querySelector('#remove_tree1').onclick = () => {
     if (trees.length > 0) {
         trees.shift()
@@ -39,6 +36,7 @@ document.querySelector('#remove_tree1').onclick = () => {
     }
 }
 
+// Remove the second tree in the list
 document.querySelector('#remove_tree2').onclick = () => {
     if (trees.length > 1) {
         trees.splice(1,1)
@@ -48,6 +46,7 @@ document.querySelector('#remove_tree2').onclick = () => {
     }
 }
 
+// Remove the last tree in the list
 document.querySelector('#remove_treeLast').onclick = () => {
     if (trees.length > 0) {
         trees.pop()
@@ -56,4 +55,39 @@ document.querySelector('#remove_treeLast').onclick = () => {
         errorElement.textContent = 'Cannot remove the last tree because there are no trees to remove.'
     }
     
+}
+
+// Sort trees A>Z
+document.querySelector('#sortTrees').onclick = () => {
+    trees.sort((a, b)=>{
+        if(a.toLowerCase() > b.toLowerCase()){
+          return 1;
+        }else{
+          return -1;
+        }
+      });
+    listTrees()
+}
+
+// Make all trees lower-case
+document.querySelector('#lowerTrees').onclick = () => {
+    const lowerCased = trees.map(tree => tree.toLowerCase())
+    console.log(lowerCased)
+    listTrees()
+}
+
+document.querySelector('#lowerTrees').onclick = () => {
+    trees.lowerCased()
+    listTrees()
+}
+
+//Retrieve the name of the specified tree from the list
+document.querySelector('#showName3').onclick = () => {
+    document.querySelector('#treeName').innerText = `The name of the third tree in the list is ${trees[2]}.`
+    listTrees()
+}
+
+document.querySelector('#showName4').onclick = () => {
+    document.querySelector('#treeName').innerText = `The name of the third tree in the list is ${trees[3]}.`
+    listTrees()
 }
