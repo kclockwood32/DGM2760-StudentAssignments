@@ -12,9 +12,9 @@ const listTrees = () => {
     displayResults.innerHTML = `${treeList} <span>${trees.length} elements long</span>`
 }
 
-// Add a redwood tree to end of list
 listTrees()
 
+// Add a redwood tree to end of list
 document.querySelector('#add_redwood').onclick = () => {
     trees.push('redwood')
     listTrees()
@@ -72,12 +72,9 @@ document.querySelector('#sortTrees').onclick = () => {
 // Make all trees lower-case
 document.querySelector('#lowerTrees').onclick = () => {
     const lowerCased = trees.map(tree => tree.toLowerCase())
+    trees.length = 0;
+    trees.push(lowerCased)
     console.log(lowerCased)
-    listTrees()
-}
-
-document.querySelector('#lowerTrees').onclick = () => {
-    trees.lowerCased()
     listTrees()
 }
 
