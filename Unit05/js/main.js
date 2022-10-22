@@ -1,5 +1,5 @@
 // Create an array with 4 trees listed
-const trees = ['oak', 'Pine', 'aspen', 'Bald Cypress']
+let trees = ['oak', 'Pine', 'aspen', 'Bald Cypress']
 const errorElement = document.querySelector('#error')
 const displayResults = document.querySelector('#displayResults')
 
@@ -71,10 +71,7 @@ document.querySelector('#sortTrees').onclick = () => {
 
 // Make all trees lower-case
 document.querySelector('#lowerTrees').onclick = () => {
-    const lowerCased = trees.map(tree => tree.toLowerCase())
-    trees.length = 0;
-    trees.push(lowerCased)
-    console.log(lowerCased)
+    trees = trees.map(tree => tree.toLowerCase())
     listTrees()
 }
 
