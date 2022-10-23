@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Libre+Baskerville&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>06 Nonsense Story</title>
 
@@ -14,39 +17,36 @@
         <h2>String Manipulation</h2>
     </header>
     <main>
-        <h1>The Tale of Sir Walter the Wise</h1>
+        <h1>The Tale of Absurdity and Nonsense</h1>
         <h2>What I learned</h2>
+        <div id="learnedThings">
         <ul class="objectives">
             <li>Extract text content from HTML elements.</li>
-            <li>Convert a string into an array.</li>
+            <li>Use the Split method to turn a string into an array using spaces and returns.</li>
         </ul>
+        <ul class="objectives2">
+            <li>Use the toLowerCase method to modify elements in a string.</li>
+            <li>Use template literals.</li>
+        </ul>
+        </div>
+        <div id="textAreas">
         <article>
             <h2>Seven NOUNS</h2>
-            <textarea id="noun">
-                Horse
-                Bridge
-                Office
-                Cow
-                Human
-            </textarea>
+            <textarea id="noun"></textarea>
         </article>
         <article>
-            <h2>Three ADJECTIVES</h2>
-            <textarea id="adjective">
-                Gorgeous
-                Fine
-                Disgusting
-            </textarea>
+            <h2>Four ADJECTIVES</h2>
+            <textarea id="adjective"></textarea>
         </article>
         <article>
-            <h2>Two VERBS</h2>
-            <textarea id="verb">
-                Sprint
-                Meander
-            </textarea>
+            <h2>Three VERBS</h2>
+            <textarea id="verb"></textarea>
         </article>
+        </div>
+        <div id="buttonDiv">
         <button onclick="tellStory()">Tell the Story</button>
-        <p id="story"></p>
+    </div>
+    <p id="story"></p>
     </main>
     <footer>
         <p><i>Assignment for DGM2760 by Casey Lockwood.</i></p>
