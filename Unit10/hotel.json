@@ -14,15 +14,15 @@
             "gym": "No",
             "roomTypes": ["King", "Queen"],
             "address": "23 Main Plaza",
-            "picture": "room1.jpg"
+            "picture": "room2.jpg"
         },
         {
-            "name": "Milton",
+            "name": "Hilton",
             "rooms": "42",
             "gym": "Yes",
             "roomTypes": ["King", "Queen", "Accessible"],
             "address": "10 Long View",
-            "picture": "room1.jpg" 
+            "picture": "room3.jpg" 
         }
     ]
 }

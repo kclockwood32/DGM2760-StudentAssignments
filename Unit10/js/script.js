@@ -12,12 +12,8 @@ async function getHotelData() {
 
 let hotelData = {}
 getHotelData().then(data => hotelData = data)
-
-// store in a variable
-// use that variable to loop over each element and addEventListener to each one
-// I suggest using forEach loop
-document.querySelectorAll("a")
-document.querySelector("#marriott").addEventListener('click', hotelInfo)
+let hotelTags = document.querySelectorAll("a")
+hotelTags.forEach(element => element.addEventListener('click', hotelInfo))
 
 function hotelInfo(event) {
     let hotelChoice = hotelData.hotels.find(hotel => {
@@ -25,5 +21,10 @@ function hotelInfo(event) {
     })
     console.log(hotelChoice)
 
-    document.querySelector("#hotelName").textContent = `${hotelChoice.name} Hotel`
+    document.querySelector("#hotelName").textContent = ` ${hotelChoice.name} Hotel`
+    document.querySelector("#rooms").textContent = ` ${hotelChoice.rooms}`
+    document.querySelector("#gym").textContent = ` ${hotelChoice.gym}`
+    document.querySelector("#type").textContent = ` ${hotelChoice.roomTypes}`
+    document.querySelector("#address").textContent = ` ${hotelChoice.address}`
+    document.querySelector("#picture").src = ` ${hotelChoice.picture}`
 }
