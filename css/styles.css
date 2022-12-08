@@ -1,0 +1,12 @@
+h1 {
+    color: rgb(31, 118, 153);
+    padding: .5rem 0 0 2%;
+    font-size: 3rem;
+    padding-right: 48px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li {
+    font-size: xx-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
