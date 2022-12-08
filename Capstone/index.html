@@ -4,16 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Capstone Project</title>
 </head>
 <body>
     <header>
-        <h1>Capstone Project</h1>
-        <h2>Proof of Skills Gained</h2>
+        <h1></h1>
+        <h2></h2>
     </header>
     <main>
-        
+        <h1>D&D Character Generator</h1>
+        <p>This is a tool I built that can be used to generate random combinations of elements provided by the user. 
+            The main idea was for it to be used to create characters for Dungeons and Dragons campaigns, but feel free to use it however you like.</p>
+            <p>Elements are separated whenever the program encounters a <b>space</b> or <b>line break</b>. Feel free to add as many elements as you like in each box. <b>Example:</b> Name: Marryn, Class: Mage, Weapon: Axe.</p>
+        </div>
+        <div id="textAreas">
+        <article>
+            <h2>Names</h2>
+            <textarea id="names"></textarea>
+        </article>
+        <article>
+            <h2>Classes</h2>
+            <textarea id="class"></textarea>
+        </article>
+        <article>
+            <h2>Weapons</h2>
+            <textarea id="weapon"></textarea>
+        </article>
+        </div>
+        <div id="buttonDiv">
+        <button onclick="generateCharacters()">Generate Character</button>
+    </div>
+    <p id="generate"></p>
+    <p id="pageLastModified"></p>
     </main>
     <footer>
         <p><i>Assignment for DGM2760 by Casey Lockwood. Today is:
